@@ -27,7 +27,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="/">Inicio</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -35,12 +35,15 @@
                                 Hombres
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=hombre&categoria=ofertas">Ofertas</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Camisas</a></li>
-                                <li><a class="dropdown-item" href="#">Pantalon</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=hombre&categoria=camisas">Camisas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=hombre&categoria=pantalones">Pantalones</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -49,12 +52,15 @@
                                 Mujeres
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Camisas</a></li>
-                                <li><a class="dropdown-item" href="#">Pantalon</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=mujer&categoria=camisas">Camisas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=mujer&categoria=pantalones">Pantalon</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=mujer&categoria=ofertas">Ofertas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item dropdown">
@@ -63,12 +69,15 @@
                                 Ninos
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#">Camisas</a></li>
-                                <li><a class="dropdown-item" href="#">Pantalon</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=ninos&categoria=camisas">Camisas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=ninos&categoria=pantalones">Pantalon</a></li>
                                 <li>
                                     <hr class="dropdown-divider">
                                 </li>
-                                <li><a class="dropdown-item" href="#">Ofertas</a></li>
+                                <li><a class="dropdown-item"
+                                        href="./products.html?genero=ninos&categoria=ofertas">Ofertas</a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
@@ -102,7 +111,7 @@
     </header>
 
     <main>
-        <div class="hero h-100 mt-5">
+        <section class="hero h-100 mt-5">
             <div class="container h-100">
                 <div class="row row-cols-1 row-cols-sm-2 d-flex flex-column-reverse flex-sm-row g-4 ">
                     <div class="col d-flex align-items-center">
@@ -112,10 +121,12 @@
                                 Encuentra prendas de alta calidad que te harán lucir increible.
                             </p>
                             <p>¡Mira nuestros productos y viste con confianza!.</p>
-                            <button type="button" class="btn btn-outline-success d-block mb-5">
-                                <i class="fa-solid fa-shirt"></i>
-                                Ver productos
-                            </button>
+                            <a href="#products" class="w-100 text-decoration-none">
+                                <button type="button" class="btn btn-outline-success d-block w-100 mb-5">
+                                    <i class="fa-solid fa-shirt"></i>
+                                    Ver productos
+                                </button>
+                            </a>
                         </div>
                     </div>
                     <div class="col">
@@ -125,9 +136,9 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <div class="hero-carousel">
+        <section class="hero-carousel mt-5">
             <div id="carouselExampleIndicators" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -164,9 +175,9 @@
                     <span class="visually-hidden">Next</span>
                 </button>
             </div>
-        </div>
+        </section>
 
-        <div class="products-offers mb-5">
+        <section class="products-offers mt-5">
             <div class="container">
                 <h2 class="text-center mt-2"> Ofertas </h2>
                 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
@@ -175,7 +186,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa1.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa1.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -198,7 +209,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa4.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa4.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -220,7 +231,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa5.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa5.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -242,7 +253,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/jean2.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/jean2.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -282,9 +293,9 @@
                 </nav>
 
             </div>
-        </div>
+        </section>
 
-        <div class="products mb-5">
+        <section class="products mt-5 mb-5" id="products">
             <div class="container">
                 <h2 class="text-center mt-2">Productos</h2>
 
@@ -301,7 +312,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa1.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa1.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -322,7 +333,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa2.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa2.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -343,7 +354,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa3.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa3.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -365,7 +376,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa4.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa4.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -386,7 +397,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/camisa5.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/camisa5.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -407,7 +418,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/jean1.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/jean1.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -428,7 +439,7 @@
                     <div class="col">
                         <div class="card h-100">
                             <div class="ratio ratio-1x1">
-                                <img src="./products/jean2.jpg" class="card-img-top" alt="...">
+                                <img src="./products/images/jean2.jpg" class="card-img-top" alt="...">
                             </div>
                             <div class="card-body">
                                 <h5 class="card-title">Card title</h5>
@@ -467,7 +478,7 @@
                 </nav>
 
             </div>
-        </div>
+        </section>
 
     </main>
 
