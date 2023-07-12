@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moda Sport - Detalles de producto.</title>
+    <title>Moda Sport - Carrito de compras.</title>
     <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -92,16 +92,14 @@
                         </li>
                     </ul>
 
-                    <a class="text-decoration-none" href="./shopping-cart.html">
-                        <button type="button" class="btn btn-outline-success m-1 position-relative"
-                            aria-label="Botón carrito de compras" title="Carrito de compras">
-                            <i class="fa-solid fa-cart-shopping"></i>
-                            <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
-                                2
-                                <span class="visually-hidden">Number of items</span>
-                            </span>
-                        </button>
-                    </a>
+                    <button type="button" class="btn btn-outline-success m-1 position-relative"
+                        aria-label="Botón carrito de compras" title="Carrito de compras">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <span class="position-absolute top-0 start-0 translate-middle badge rounded-pill bg-danger">
+                            2
+                            <span class="visually-hidden">Number of items</span>
+                        </span>
+                    </button>
 
 
                     <button type="button" class="btn btn-outline-success d-block" aria-label="Botón de inicio de sesión"
@@ -114,100 +112,88 @@
     </header>
 
     <main style="margin-top: 100px !important">
-        <section class="details mt-5 mb-5 h-auto">
-            <div class="container text-center">
-                <h1>Detalles del producto</h1>
-                <nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='currentColor'/%3E%3C/svg%3E&#34;);"
-                    aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item active" aria-current="page">Inicio</li>
-                        <li class="breadcrumb-item active" aria-current="page">Productos</li>
-                        <li class="breadcrumb-item"><a href="#">Detalles</a></li>
-                    </ol>
-                </nav>
-                <div class="row row-cols-1 row-cols-sm-2 d-flex flex-column flex-sm-row g-4 ">
-                    <div class="col">
-                        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                            <div class="carousel-inner">
-                                <div class="carousel-item ratio ratio-1x1 active">
-                                    <img src="./products/images/camisa1.jpg" class="d-block w-100" alt="...">
+        <section class="cart_detail h-100 my-5">
+            <div class="container">
+                <h1 class="text-center mt-2"> Carrito de compras </h1>
+                <div class="items d-flex flex-column w-100 g-1 p-1">
+                    <div class="item border row row-cols-1 p-1">
+                        <div class="col-4 col-sm-2 d-flex align-items-center">
+                            <div class="ratio ratio-1x1 ">
+                                <img src="./products/images/camisa1.jpg" class="img-fluid rounded-start" alt="...">
+                            </div>
+                        </div>
+
+                        <div class="col-8 col-sm-9 d-flex align-items-center">
+                            <div class="item-body d-flex flex-column w-100">
+                                <div class="item-title">
+                                    <h2 class="card-title text-center text-sm-start">camisa estampada azul</h2>
                                 </div>
-                                <div class="carousel-item ratio ratio-1x1">
-                                    <img src="./products/images/camisa1-1.jpg" class="d-block w-100" alt="...">
+                                <div class="cart_detail d-flex flex-row justify-content-between">
+                                    <p> Cantidad: <strong> 1 </strong></p>
+                                    <p> Talla: <strong> S </strong> </p>
+                                    <p> <strong>$60.000</strong> </p>
+                                </div>
+                                <div class="btns d-flex flex-row justify-content-between justify-content-sm-end g-2">
+                                    <button class="btn btn-warning btn-sm mx-sm-2" role="button">
+                                        <i class="fa-solid fa-pen-to-square"></i>
+                                        Editar
+                                    </button>
+
+                                    <button class="btn btn-danger btn-sm " role="button">
+                                        <i class="fa-solid fa-trash"></i>
+                                        Borrar
+                                    </button>
                                 </div>
                             </div>
-                            <button class="carousel-control-prev" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-                                <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
-                                <span class="visually-hidden">Previous</span>
-                            </button>
-                            <button class="carousel-control-next" type="button"
-                                data-bs-target="#carouselExampleControls" data-bs-slide="next">
-                                <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
-                                <span class="visually-hidden">Next</span>
-                            </button>
                         </div>
                     </div>
-                    <div class="col d-flex align-items-center">
-                        <div class="details-body text-center text-sm-start d-flex flex-column justify-content-center">
-
-                            <h2 class="mt-0">camisa estampada azul </h2>
-                            <p>SKU 016488 AZUL </p>
-                            <p>$ 60.000</p>
-                            <form>
-                                <div class="organizar d-flex justify-content-between">
-                                    <div class="talla-form  mb-3">
-                                        <label for="inputtalla" class="col-sm-2 col-form-label">Talla</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Elige una opción</option>
-                                            <option value="1">S</option>
-                                            <option value="2">M</option>
-                                            <option value="3">L</option>
-                                            <option value="4">XL</option>
-                                        </select>
-                                    </div>
-                                    <div class="color-form  mb-3">
-                                        <label for="inputcolor" class="col-sm-2 col-form-label">Color</label>
-                                        <select class="form-select" aria-label="Default select example">
-                                            <option selected>Elige una opción</option>
-                                            <option value="1">Negro</option>
-                                            <option value="2">Azul</option>
-                                            <option value="3">Gris</option>
-                                        </select>
-                                    </div>
-                                </div>
-                                <div class="talla-form d-flex mb-3 ">
-                                    <label for="inputcantidad" class="col-sm-2 col-form-label">Cantidad</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Elige una opción</option>
-                                        <option value="1">1</option>
-                                        <option value="2">2</option>
-                                        <option value="3">3</option>
-                                        <option value="4">4</option>
-                                        <option value="4">5</option>
-                                    </select>
-                                </div>
-                                <p>Nota: Para pedidos al mayor comunicarse con <a href="#Contacto" class="text-dark"
-                                        title="Contacto">Nosotros</a></p>
-
-                                <a href="./shopping-cart.html" class="text-decoration-none">
-                                    <button type="button" class="btn btn-success d-block mb-5">
-                                        <i class="fa-solid fa-shirt"></i>
-                                        Añadir al carrito
-                                    </button>
-                                </a>
-                            </form>
-
-                            <h3>Detalles</h3>
-                            <p>Camisa manga corta elaborada en mezcla de poli – algodón con cobertura full
-                                estampación digital con 1 bolsillo despuntado y botones de contraste.
-                                fabricación de este producto es 100% Nacional.
-                                Composición Prenda: 100% Algodón</p>
-                        </div>
-                    </div>
-
+                    
                 </div>
+
+
+                <form class="form mt-2">
+                    <div class="cupon d-flex flex-row justify-content-end">
+                        <p><strong>¿Tienes un cupón?</strong></p>
+                        <div class="col-4 mx-3">
+                            <input type="text" class="form-control" id="inputProducto" placeholder="Codigo del cupón">
+                        </div>
+                        <button class="btn btn-success btn-sm" type="button">
+                            APLICAR
+                        </button>
+                    </div>
+                </form>
+
+                <div class="totales w-100 d-flex flex-column mt-3">
+                    <div class="cart_detail d-flex flex-row justify-content-between">
+                        <p> Sub Total </p>
+                        <p>
+                            $60.000
+                        </p>
+
+                    </div>
+                    <div class="cart_detail d-flex flex-row justify-content-between">
+                        <p> Descuento </p>
+                        <p>
+                            $60.000
+                        </p>
+
+                    </div>
+                    <div class="cart_detail d-flex flex-row justify-content-between mt-2">
+                        <h2> Total </h2>
+                        <h2>
+                            $60.000
+                        </h2>
+                    </div>
+                </div>
+                <div class="d-grid gap-2 p-4">
+                    <button class="btn btn-success" type="button">
+                        <i class="fa-solid fa-dollar-sign"></i>
+                        PAGAR
+                    </button>
+                </div>
+
             </div>
+
         </section>
     </main>
 
